@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Визитка</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="header">
+        <h1>Алиев Салман</h1>
+        <h2 class="header-title">Front-end разработчик</h2>
+        <p>
+            <a href="mailto:itcommuna@yandex.ru">itcommuna@yandex.ru</a>,
+            <a href="https://github.com/diameraldeen">github.com/diameraldeen</a>
+        </p>
+    </div>
+    <div id="main">
+        <p>О себе</p>
+        <section>
+            <h2>Опыт работы</h2>
+        <ul>
+            <li>Описание опыта работы 1</li>
+            <li>Описание опыта работы 2</li>
+            <!-- Add more items as needed -->
+            </ul>
+        </section>
+        <section>
+            <h2>Образование</h2>
+            <ul>
+            <li>Описание образования 1</li>
+            <li>Описание образования 2</li>
+            <!-- Add more items as needed -->
+            </ul>
+        </section>
+        <section>
+            <h2>Другие навыки и увлечения</h2>
+            <ul>
+            <li>Описание других навыков и увлечений 1</li>
+            <li>Описание других навыков и увлечений 2</li>
+            <!-- Add more items as needed -->
+            </ul>
+        </section>
+    </div>
+    <div id="footer">
+        <p>ФИО: Алиев Салман А.</p>
+        <p>Адрес: РФ</p>
+        <p>Телефон: Phone Number</p>
+        <p>Email: itcommuna@yandex.ru</p>
+    </div>
+    <button id="print-button" disabled>Распечатать</button>
+    <button id="change-button">Change</button>
+    <script>
+        document.getElementById("change-button").addEventListener("click", function() {
+            document.getElementById("print-button").removeAttribute("disabled");
+        })
+
+        document.getElementById("print-button").addEventListener("click", function(e) {
+            document.getElementById("print-button").setAttribute("disabled", "disabled");
+        })
+    </script>
+
+</body>
+</html>
